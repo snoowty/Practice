@@ -1,5 +1,12 @@
-//: Playground - noun: a place where people can play
+for n in 1...9{
+    print(3 * n)
+}
 
-import UIKit
+var x = 2;
+print(x * x)
 
-var str = "Hello, playground"
+var a = 0;
+for n in 1...100{
+    a = a + n;
+}
+print(a)
