@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="anV-tq-VXB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sjq-I3-Mtv">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="69X-Wz-cJX">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="Enf-25-bTf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="anV-tq-VXB" firstAttribute="leading" secondItem="Sjq-I3-Mtv" secondAttribute="leading" id="A7p-Iv-cxt"/>
+                            <constraint firstItem="Sjq-I3-Mtv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="BTs-Pr-DCe"/>
+                            <constraint firstItem="anV-tq-VXB" firstAttribute="trailing" secondItem="Sjq-I3-Mtv" secondAttribute="trailing" id="NoM-Yk-yZR"/>
+                            <constraint firstItem="anV-tq-VXB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SKm-zM-Pn2"/>
+                            <constraint firstAttribute="trailing" secondItem="anV-tq-VXB" secondAttribute="trailing" id="ST6-E5-Ljf"/>
+                            <constraint firstItem="Sjq-I3-Mtv" firstAttribute="bottom" secondItem="anV-tq-VXB" secondAttribute="bottom" id="efa-zU-OUa"/>
+                            <constraint firstItem="anV-tq-VXB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uc7-It-qbX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="anV-tq-VXB" id="a3M-nc-ffK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="682" height="1021"/>
+    </resources>
+</document>
